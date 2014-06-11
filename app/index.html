@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/vendor/bootstrap.min.css">
   </head>
   <body class="container">
-	<h2>Say Hello World!</h2>
+	<h1>Say Hello World!</h1>
 	<div ng-controller="ParentController">
 		<div ng-controller="ChildController" class="form-group">
 			<input class="form-control" type="text" ng-model="person.name" placeholder="Name"></input>			
 		</div>
-		Hello World, it's {{person.name}}
+		<h2>Hello World, it's => {{person.name}}</h2>
 	</div>
   </body>
 </html>
