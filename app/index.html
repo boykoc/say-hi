@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <script src="../js/vendor/angular.min.js"></script>
+    <script src="../js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/vendor/bootstrap.min.css">
+  </head>
+  <body class="container">
+	<h2>Say Hello World!</h2>
+	<div ng-controller="ParentController">
+		<div ng-controller="ChildController" class="form-group">
+			<input class="form-control" type="text" ng-model="person.name" placeholder="Name"></input>			
+		</div>
+		Hello World, it's {{person.name}}
+	</div>
+  </body>
+</html>
